@@ -7,7 +7,7 @@ import { Button } from "@/app/components/ui/button";
 const page = () => {
    return (
       <div className='relative w-full h-screen bg-basic flex flex-col items-center justify-center'>
-         <Logo />
+         <Logo classname="text-white" />
          <div className="text-center mt-6 text-white space-y-3">
             <p className=" text-mono">Welcome to ChatGPT</p>
             <p className="">Log in with your OpenAI account to continue</p>
