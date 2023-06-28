@@ -3,10 +3,18 @@
 @tailwind utilities;
  
 
-
-@layer {
-  
+input[type="text"]:focus,
+input[type="password"]:focus {
+  @apply  border-teal ;
 }
+
+input[type="text"]:focus ~ .input-text,
+input[type="password"]:focus ~ .input-text,
+input[type="text"]:placeholder-shown ~ .input-text
+input[type="password"]:placeholder-shown ~ .input-text{
+  @apply text-teal text-[18px] bg-white transform -translate-y-[26px] -translate-x-3 scale-75 px-2 ;
+}
+
 
 @layer base {
   :root {

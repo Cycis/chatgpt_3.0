@@ -12,14 +12,14 @@ const LoginForm = () => {
    return (
       <div className='w-full xs:w-[350px] sm:w-[350px] h-screen mt-6 px-4'>
          <form className='flex flex-col gap-6'>
-            <div className='relative w-full h-12 border-[1px] border-gray-400 rounded-sm'>
-               <input type="text" id='email' className='w-full h-full outline-none p-2 text-[16px] text-basic rounded-sm' />
-               <label id='email_id' htmlFor="email" className='absolute top-3 left-2 text-basic'>Email address</label>
-            </div>
-            <div className='relative w-full h-12 border-[1px] border-gray-400 rounded-sm'>
-               <input type="text" id='email' className='w-full h-full outline-none p-2 text-[16px] text-basic rounded-sm' />
-               <label htmlFor="email" id='password_id' className='absolute top-3 left-2 text-basic'>Password</label>
-            </div>
+            <label className='relative w-full h-12  rounded-sm cursor-pointer'>
+               <input type="text" id='email' className='w-full h-full border-[1px] border-gray-400 outline-none p-2 text-[16px] text-basic px-2 rounded-sm' />
+               <span id='email_id' className='absolute top-3 left-2 text-[16px] text-opacity-80 text-basic transition duration-300 input-text'>Email address</span>
+            </label>
+            <label className='relative w-full h-12  rounded-sm cursor-pointer'>
+               <input type="password" id='email' className='w-full h-full border-[1px] border-gray-400 outline-none text-[16px] text-basic px-2 rounded-sm' />
+               <span id='password_id' className='absolute top-3 left-2 text-[16px] text-opacity-80 text-basic transition duration-300 input-text'>Password</span>
+            </label>
             <Button className='bg-teal hover:bg-teal/80 tracking-wide py-6 rounded-sm capitalize text-sm text-white'>continue</Button>
             <p className='text-sm text-basic mt-2 self-center'>Don't have an account? <Link href='/u/signup' className='text-teal text-pops text-center'>Sign Up</Link></p>
          </form>
