@@ -8,6 +8,10 @@ module.exports = {
     './src/**/*.{ts,tsx}',
   ],
   theme: {
+    screens: {
+      'xs': '400px',
+      // => @media (min-width: 640px) { ... }
+    },
     container: {
       center: true,
       padding: "2rem",
