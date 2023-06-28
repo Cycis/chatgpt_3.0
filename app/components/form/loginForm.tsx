@@ -21,7 +21,7 @@ const LoginForm = () => {
                   className='w-full h-full border-[1px] border-gray-400 outline-none p-2 text-[16px] text-basic px-2 focus:border-teal rounded-sm peer' placeholder=''
                />
                <span
-                  className='absolute top-3 left-2 text-[16px] text-opacity-80 text-basic scale-100 bg-white px-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:top-3 peer-placeholder-shown:left-2 peer-placeholder-shown:text-teal peer-focus:-top-3 peer-focus:-left-2 peer-focus:scale-75 peer-focus:text-teal transition-all duration-300'
+                  className='absolute top-3 left-2 text-[16px] text-opacity-80 text-basic scale-100 bg-white px-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:top-3 peer-placeholder-shown:left-2 peer-placeholder-shown:text-teal peer-focus:-top-3 peer-focus:-left-2 peer-focus:scale-75 peer-focus:text-teal transition-all duration-500'
                >
                   Email address
                </span>
