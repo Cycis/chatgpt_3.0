@@ -10,13 +10,16 @@ const LoginForm = () => {
    const form = useForm()
 
    return (
-      <div className='w-full xs:w-[350px] sm:w-[350px] h-screen mt-6 px-4'>
+      <div className='w-full xs:w-[350px] sm:w-[350px] h-screen mt-4 md:mt-6 px-4'>
          <form className='flex flex-col gap-6'>
+            <h1 className='text-3xl text-basic text-center font-semibold tracking-wider' >Welcome Back</h1>
             <div className="relative h-12">
                <input
                   type="email"
                   className="peer w-full border-b placeholder:text-transparent h-full border-[1px] border-gray-400 outline-none text-[16px] text-basic px-4 focus:border-teal rounded-sm"
                   placeholder=" "
+                  autoComplete='off'
+
                />
                <label
                   htmlFor='email'
@@ -31,6 +34,8 @@ const LoginForm = () => {
                   type="password"
                   className="peer w-full border-b placeholder:text-transparent h-full border-[1px] border-gray-400 outline-none text-[16px] text-basic px-4 focus:border-teal rounded-sm"
                   placeholder=" "
+                  autoComplete='off'
+
                />
                <label
                   htmlFor='password'
