@@ -12,29 +12,42 @@ const LoginForm = () => {
    return (
       <div className='w-full xs:w-[350px] sm:w-[350px] h-screen mt-6 px-4'>
          <form className='flex flex-col gap-6'>
-            <label
-               className='relative w-full h-12  rounded-sm cursor-pointer'
-            >
+            <div className="relative h-12">
                <input
-                  type="text"
-                  id='email'
-                  className='w-full h-full border-[1px] border-gray-400 outline-none p-2 text-[16px] text-basic px-2 focus:border-teal rounded-sm peer' placeholder=''
+                  type="email"
+                  className="peer w-full border-b placeholder:text-transparent h-full border-[1px] border-gray-400 outline-none text-[16px] text-basic px-4 focus:border-teal rounded-sm"
+                  placeholder=" "
                />
-               <span
-                  className='absolute top-3 left-2 text-[16px] text-opacity-80 text-basic scale-100 bg-white px-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:top-3 peer-placeholder-shown:left-2 peer-placeholder-shown:text-teal peer-focus:-top-3 peer-focus:-left-2 peer-focus:scale-75 peer-focus:text-teal transition-all duration-500'
+               <label
+                  htmlFor='email'
+                  className="absolute top-3 left-1 ml-2 -translate-y-6 bg-white text-sm duration-500 text-gray-500 transition-all peer-placeholder-shown:translate-y-0 peer-placeholder-shown:text-base peer-placeholder-shown:focus:text-teal peer-focus:ml-1 peer-focus:-translate-y-6 peer-focus:text-teal peer-focus:px-1 peer-focus:text-sm"
                >
-                  Email address
-               </span>
-            </label>
-            <label className='relative w-full h-12  rounded-sm cursor-pointer'>
-               <input type="password" id='email' className='w-full h-full border-[1px] border-gray-400 outline-none text-[16px] text-basic px-2 focus:border-teal rounded-sm peer' placeholder='' />
-               <span
-                  className='absolute top-3 left-2 text-[16px] text-opacity-80 text-basic scale-100 bg-white px-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:top-3 peer-placeholder-shown:left-2 peer-placeholder-shown:text-teal peer-focus:-top-3 peer-focus:-left-2 peer-focus:scale-75 peer-focus:text-teal  transition-all duration-500'>
+                  Email Address
+               </label>
+            </div>
+
+            <div className="relative h-12">
+               <input
+                  type="password"
+                  className="peer w-full border-b placeholder:text-transparent h-full border-[1px] border-gray-400 outline-none text-[16px] text-basic px-4 focus:border-teal rounded-sm"
+                  placeholder=" "
+               />
+               <label
+                  htmlFor='password'
+                  className="absolute top-3 left-1 ml-2 -translate-y-6 bg-white text-sm duration-500 text-gray-500 transition-all peer-placeholder-shown:translate-y-0 peer-placeholder-shown:text-base peer-placeholder-shown:focus:text-teal peer-focus:ml-1 peer-focus:-translate-y-6 peer-focus:text-teal peer-focus:px-1 peer-focus:text-sm"
+               >
                   Password
-               </span>
-            </label>
-            <Button className='bg-teal hover:bg-teal/80 tracking-wide py-6 rounded-sm capitalize text-sm text-white'>continue</Button>
-            <p className='text-sm text-basic mt-2 self-center'>Don't have an account? <Link href='/u/signup' className='text-teal text-pops text-center'>Sign Up</Link></p>
+               </label>
+            </div>
+
+            <Button
+               className='bg-teal w-full hover:bg-teal/80 tracking-wide py-6 rounded-sm capitalize text-md font-normal text-inter text-white'
+            >
+               continue
+            </Button>
+            <p className='text-[13px] text-basic font-base self-center'>Don't have an account? {" "}
+               <Link href='/u/signup' className='text-teal text-inter text-center'>Sign Up</Link>
+            </p>
          </form>
          <div className='w-full flex my-4 items-center justify-between'>
             <span className='w-[40%] h-[1px] bg-basic/40'></span>
